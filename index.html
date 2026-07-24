@@ -129,10 +129,13 @@
   .cols{display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px}
   .card{background:var(--raise); border:1px solid var(--line); border-radius:12px; padding:20px; box-shadow:var(--shadow)}
   .card h3{margin:0 0 12px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); display:flex; align-items:center; gap:8px}
+  .card h3 .sum{margin-left:auto; text-transform:none; font-weight:700; font-size:12px; letter-spacing:.02em; color:var(--prog); font-variant-numeric:tabular-nums; white-space:nowrap}
   .card ul{margin:0; padding:0; list-style:none}
-  .card li{font-size:14px; color:var(--ink); padding:8px 0; border-top:1px solid var(--line); line-height:1.4}
+  .card li{display:flex; align-items:baseline; gap:14px; font-size:14px; color:var(--ink); padding:8px 0; border-top:1px solid var(--line); line-height:1.4}
   .card li:first-child{border-top:0; padding-top:0}
-  .card li span{display:block; color:var(--ink-3); font-size:12.5px; margin-top:1px}
+  .card li .lbl{flex:1 1 auto; min-width:0}
+  .card li .lbl span{display:block; color:var(--ink-3); font-size:12.5px; margin-top:1px}
+  .card li .est{flex:0 0 auto; margin-left:auto; font-size:12px; font-weight:700; letter-spacing:.02em; color:var(--ink-3); font-variant-numeric:tabular-nums; white-space:nowrap}
 
   /* ---------- ask (decisions) ---------- */
   .ask{background:var(--act-bg); border:1px solid color-mix(in srgb, var(--act) 30%, transparent); border-radius:14px; padding:26px 26px 10px}
@@ -300,32 +303,33 @@
     <div class="kicker"><span class="num">06</span><div><h2>Что осталось на нашей стороне</h2><div class="sub">Работы, которые команда закрывает без вашего участия</div></div></div>
     <div class="cols">
       <div class="card">
-        <h3><span class="chip prog"></span>Полировка</h3>
+        <h3><span class="chip prog"></span>Полировка <span class="sum">≈ 7ч</span></h3>
         <ul>
-          <li>Подпись под фото в статье</li>
-          <li>Размер аватара художника</li>
-          <li>Отступы на странице вакансий</li>
-          <li>Теги в статьях рубрик</li>
-          <li>Cookie-баннер</li>
-          <li>Футер: все ссылки и соцсети</li>
+          <li><div class="lbl">Подпись под фото в статье</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Размер аватара художника</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Отступы на странице вакансий</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Редакция: соцсети и текст</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Теги в статьях рубрик</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Cookie-баннер</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Футер: все ссылки и соцсети</div><span class="est">~1ч</span></li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="chip prog"></span>Доработки</h3>
+        <h3><span class="chip prog"></span>Доработки <span class="sum">≈ 13,75ч</span></h3>
         <ul>
-          <li>Проектный клуб <span>тёмная тема, схема, поддомен</span></li>
-          <li>Новая страница Studio</li>
-          <li>Фильтры на вакансиях</li>
-          <li>Юридические страницы <span>вёрстка и контент</span></li>
-          <li>E-mail-рассылка <span>свёрстана на 3 языках, финальная проверка отображения</span></li>
-          <li>Формы Mailchimp на новых страницах</li>
+          <li><div class="lbl">Проектный клуб <span>тёмная тема, схема, поддомен</span></div><span class="est">~3ч</span></li>
+          <li><div class="lbl">Новая страница Studio</div><span class="est">~1,5ч</span></li>
+          <li><div class="lbl">Фильтры на вакансиях</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Юридические страницы <span>вёрстка и контент</span></div><span class="est">~4,5ч</span></li>
+          <li><div class="lbl">E-mail-рассылка <span>свёрстана на 3 языках, финальная проверка отображения</span></div><span class="est">~1,5ч</span></li>
+          <li><div class="lbl">Формы Mailchimp на новых страницах</div><span class="est">~2,25ч</span></li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="chip prog"></span>На обсуждение</h3>
+        <h3><span class="chip prog"></span>На обсуждение <span class="sum">≈ 7,5ч</span></h3>
         <ul>
-          <li>Мультиизображения в статье + лайтбокс</li>
-          <li>Детальная страница вакансии</li>
+          <li><div class="lbl">Мультиизображения в статье + лайтбокс</div><span class="est">~7,5ч</span></li>
+          <li><div class="lbl">Детальная страница вакансии</div><span class="est">—</span></li>
         </ul>
       </div>
     </div>
