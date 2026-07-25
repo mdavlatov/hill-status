@@ -235,9 +235,20 @@
     </ul>
   </section>
 
+  <!-- СВЕРХ ОБЪЁМА -->
+  <section id="extra">
+    <div class="kicker"><span class="num">04</span><div><h2>Сделано сверх объёма</h2><div class="sub">Работы, которых не было в исходном плане — понадобились по ходу проекта</div></div></div>
+    <p>По ходу работы вскрылись задачи за рамками первоначального объёма: без них сайт не смог бы отправлять письма и его было бы сложнее наполнять. Мы их закрыли.</p>
+    <ul class="feat" style="grid-template-columns:1fr">
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="t">Перенос домена к другому регистратору</div><div class="d">Домен hill.uz был зарегистрирован у регистратора, который не давал доступа к настройке DNS — технических записей домена, без которых невозможно подключить почтовую рассылку. Мы выяснили причину, нашли регистратора, готового принять домен, оформили заявление и провели перенос. Это открыло возможность настроить рассылку.</div></div></li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="t">E-mail-рассылка с нуля</div><div class="d">Письмо свёрстано на технологии MJML — она гарантирует корректное отображение во всех почтовых сервисах. В письме: шапка с логотипом, крупное изображение, персональное приветствие по имени, блок с разделами сайта и кнопка перехода. Настроен Mailchimp: шаблон рассылки, формы подписки на всех страницах, поля форм подключены через API.</div></div></li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="t">Админка настроена под контент</div><div class="d">В панели управления (Sanity) поля ввода настроены индивидуально под каждый блок сайта: редактор видит только допустимые варианты оформления — например, для заголовка главного блока доступен только курсив. Это исключает ошибки вёрстки и упрощает работу тому, кто наполняет сайт.</div></div></li>
+    </ul>
+  </section>
+
   <!-- СТРАНИЦЫ -->
   <section id="pages">
-    <div class="kicker"><span class="num">04</span><div><h2>Готовые страницы</h2><div class="sub">Открываются на тестовом адресе — можно смотреть</div></div></div>
+    <div class="kicker"><span class="num">05</span><div><h2>Готовые страницы</h2><div class="sub">Открываются на тестовом адресе — можно смотреть</div></div></div>
     <div class="tablewrap">
       <table>
         <thead><tr><th>Страница</th><th>Ссылка</th><th>Статус</th></tr></thead>
@@ -260,7 +271,7 @@
 
   <!-- СООТВЕТСТВИЕ ДИЗАЙНУ -->
   <section id="fidelity">
-    <div class="kicker"><span class="num">05</span><div><h2>Соответствие дизайну</h2><div class="sub">Сравнение реализации с макетом Figma, постранично</div></div></div>
+    <div class="kicker"><span class="num">06</span><div><h2>Соответствие дизайну</h2><div class="sub">Сравнение реализации с макетом Figma, постранично</div></div></div>
     <p class="big">В целом реализация повторяет дизайн с высокой точностью: сетка, типографика, компоненты и общий стиль совпадают. Ниже — наглядное сравнение и перечень отличий, которые мы закрываем.</p>
 
     <div class="figs" style="margin:8px 0 6px">
@@ -280,7 +291,7 @@
     </div>
     <div class="find work">
       <h3>Рекламные / спонсорские блоки <span class="chip prog">Плановая доработка</span></h3>
-      <p>Слоты под рекламу и спонсорский контент заложены в макете на нескольких страницах; выведем их по мере готовности рекламной стратегии и материалов.</p>
+      <p>Слоты под рекламу и спонсорский контент заложены в макете и выведены на страницах; осталась сквозная проверка их работы, а наполнение — по мере готовности рекламной стратегии и материалов.</p>
     </div>
 
     <h3 style="margin:34px 0 14px; font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2)">Проектный клуб — требует доработки</h3>
@@ -300,10 +311,10 @@
 
   <!-- ЧТО ОСТАЛОСЬ -->
   <section id="remaining">
-    <div class="kicker"><span class="num">06</span><div><h2>Что осталось на нашей стороне</h2><div class="sub">Работы, которые команда закрывает без вашего участия</div></div></div>
+    <div class="kicker"><span class="num">07</span><div><h2>Что осталось на нашей стороне</h2><div class="sub">Работы, которые команда закрывает без вашего участия</div></div></div>
     <div class="cols">
       <div class="card">
-        <h3><span class="chip prog"></span>Полировка <span class="sum">≈ 7ч</span></h3>
+        <h3><span class="chip prog"></span>Полировка <span class="sum">≈ 9ч</span></h3>
         <ul>
           <li><div class="lbl">Подпись под фото в статье</div><span class="est">~1ч</span></li>
           <li><div class="lbl">Размер аватара художника</div><span class="est">~1ч</span></li>
@@ -312,10 +323,12 @@
           <li><div class="lbl">Теги в статьях рубрик</div><span class="est">~1ч</span></li>
           <li><div class="lbl">Cookie-баннер</div><span class="est">~1ч</span></li>
           <li><div class="lbl">Футер: все ссылки и соцсети</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Контент на страницах проектов</div><span class="est">~1ч</span></li>
+          <li><div class="lbl">Структура заголовков <span>SEO-проверка на всех страницах</span></div><span class="est">~1ч</span></li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="chip prog"></span>Доработки <span class="sum">≈ 13,75ч</span></h3>
+        <h3><span class="chip prog"></span>Доработки <span class="sum">≈ 15,25ч</span></h3>
         <ul>
           <li><div class="lbl">Проектный клуб <span>тёмная тема, схема, поддомен</span></div><span class="est">~3ч</span></li>
           <li><div class="lbl">Новая страница Studio</div><span class="est">~1,5ч</span></li>
@@ -323,6 +336,7 @@
           <li><div class="lbl">Юридические страницы <span>вёрстка и контент</span></div><span class="est">~4,5ч</span></li>
           <li><div class="lbl">E-mail-рассылка <span>свёрстана на 3 языках, финальная проверка отображения</span></div><span class="est">~1,5ч</span></li>
           <li><div class="lbl">Формы Mailchimp на новых страницах</div><span class="est">~2,25ч</span></li>
+          <li><div class="lbl">Рекламные блоки <span>проверка работы на всех страницах</span></div><span class="est">~1,5ч</span></li>
         </ul>
       </div>
       <div class="card">
@@ -337,7 +351,7 @@
 
   <!-- ЧТО НУЖНО ОТ ВАС -->
   <section id="ask">
-    <div class="kicker"><span class="num">07</span><div><h2>Что нужно от вас</h2><div class="sub">Решения и материалы, которые двигают проект к запуску</div></div></div>
+    <div class="kicker"><span class="num">08</span><div><h2>Что нужно от вас</h2><div class="sub">Решения и материалы, которые двигают проект к запуску</div></div></div>
     <div class="ask">
       <div class="head"><span class="chip act">8 пунктов · ждём вас</span></div>
       <ol class="asklist">
@@ -355,7 +369,7 @@
 
   <!-- ЗАПУСК -->
   <section id="launch" style="border-bottom:0">
-    <div class="kicker"><span class="num">08</span><div><h2>Путь к запуску</h2><div class="sub">Как мы доходим до публичного старта</div></div></div>
+    <div class="kicker"><span class="num">09</span><div><h2>Путь к запуску</h2><div class="sub">Как мы доходим до публичного старта</div></div></div>
     <ol class="steps">
       <li class="now"><span class="n tnum">1</span><div class="body"><b>Ваши решения и материалы</b><p>Решение по оплате и передача контента (художники, картины, партнёры, клуб).</p></div></li>
       <li><span class="n tnum">2</span><div class="body"><b>Доработки и полировка</b><p>Закрываем оставшиеся пункты на нашей стороне, включая тёмную тему клуба и мелкие правки.</p></div></li>
