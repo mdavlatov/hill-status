@@ -123,6 +123,7 @@
   .find p{margin:0; color:var(--ink-2); font-size:14.5px}
   .find.attn{border-left-color:var(--act)}
   .find.ok{border-left-color:var(--done)}
+  .find p s{color:var(--ink-3); text-decoration-thickness:1px; text-decoration-color:color-mix(in srgb, var(--ink-3) 70%, transparent)}
   .find.work{border-left-color:var(--prog)}
 
   /* ---------- grouped remaining work ---------- */
@@ -136,6 +137,8 @@
   .card li .lbl{flex:1 1 auto; min-width:0}
   .card li .lbl span{display:block; color:var(--ink-3); font-size:12.5px; margin-top:1px}
   .card li .est{flex:0 0 auto; margin-left:auto; font-size:12px; font-weight:700; letter-spacing:.02em; color:var(--ink-3); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .card li.is-done .lbl{text-decoration:line-through; text-decoration-thickness:1px; text-decoration-color:color-mix(in srgb, var(--ink-3) 70%, transparent); color:var(--ink-3)}
+  .card li.is-done .est{color:var(--done); text-decoration:none}
 
   /* ---------- ask (decisions) ---------- */
   .ask{background:var(--act-bg); border:1px solid color-mix(in srgb, var(--act) 30%, transparent); border-radius:14px; padding:26px 26px 10px}
@@ -303,27 +306,37 @@
     </div>
 
     <h3 style="margin:34px 0 14px; font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2)">Точечные правки по страницам</h3>
-    <div class="find work"><h3>Статья</h3><p>Добавить теги; проработать раскладку нескольких изображений подряд и просмотр по клику (лайтбокс). Подпись под главным фото — сделано.</p></div>
-    <div class="find work"><h3>Вакансии</h3><p>Показать фильтры; на обсуждении — отдельная детальная страница вакансии. Отступы — сделано.</p></div>
-    <div class="find work"><h3>Художник · Галерея</h3><p>Наполнить реальными данными по художникам и работам (пока используются временные примеры). Размер аватара — сделано.</p></div>
+    <div class="find work"><h3>Статья</h3><p><s>Оформить подпись под главным фото;</s> добавить теги; проработать раскладку нескольких изображений подряд и просмотр по клику (лайтбокс).</p></div>
+    <div class="find work"><h3>Вакансии</h3><p>Показать фильтры; <s>поправить верхние/нижние отступы;</s> на обсуждении — отдельная детальная страница вакансии.</p></div>
+    <div class="find ok"><h3>Редакция <span class="chip done">Сделано</span></h3><p><s>Добавить блок контактов и соцсети, поправить текст.</s></p></div>
+    <div class="find work"><h3>Художник · Галерея</h3><p><s>Уменьшить аватар художника;</s> наполнить реальными данными по художникам и работам (пока используются временные примеры).</p></div>
+    <div class="find ok"><h3>Studio <span class="chip done">Сделано</span></h3><p><s>Создать новую страницу Studio (заложена в структуре проектов, ещё не сделана).</s> Страница собрана и открывается на тестовом адресе.</p></div>
   </section>
 
   <!-- ЧТО ОСТАЛОСЬ -->
   <section id="remaining">
     <div class="kicker"><span class="num">07</span><div><h2>Что осталось на нашей стороне</h2><div class="sub">Работы, которые команда закрывает без вашего участия</div></div></div>
-    <p>С прошлого обновления отчёта закрыли 8 задач: подпись под фото в статье, размер аватара художника, отступы на странице вакансий, cookie-баннер, новая страница Studio, соцсети и текст на странице редакции, структура заголовков и финальная проверка e-mail-рассылки на трёх языках.</p>
+    <p>Зачёркнутое — закрыто за последние дни: 8 задач с прошлого обновления отчёта. В суммах учтено только то, что осталось.</p>
     <div class="cols">
       <div class="card">
-        <h3><span class="chip prog"></span>Полировка <span class="sum">≈ 3ч</span></h3>
+        <h3><span class="chip prog"></span>Полировка <span class="sum">осталось ≈ 3ч</span></h3>
         <ul>
+          <li class="is-done"><div class="lbl">Подпись под фото в статье</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">Размер аватара художника</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">Отступы на странице вакансий</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">Редакция: соцсети и текст</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">Cookie-баннер</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">Структура заголовков <span>SEO-проверка на всех страницах</span></div><span class="est">Сделано</span></li>
           <li><div class="lbl">Теги в статьях рубрик</div><span class="est">~1ч</span></li>
           <li><div class="lbl">Футер: все ссылки и соцсети</div><span class="est">~1ч</span></li>
           <li><div class="lbl">Контент на страницах проектов</div><span class="est">~1ч</span></li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="chip prog"></span>Доработки <span class="sum">≈ 12,25ч</span></h3>
+        <h3><span class="chip prog"></span>Доработки <span class="sum">осталось ≈ 12,25ч</span></h3>
         <ul>
+          <li class="is-done"><div class="lbl">Новая страница Studio</div><span class="est">Сделано</span></li>
+          <li class="is-done"><div class="lbl">E-mail-рассылка <span>проверка вёрстки и контента на 3 языках</span></div><span class="est">Сделано</span></li>
           <li><div class="lbl">Проектный клуб <span>тёмная тема, схема, поддомен</span></div><span class="est">~3ч</span></li>
           <li><div class="lbl">Юридические страницы <span>вёрстка и контент</span></div><span class="est">~4,5ч</span></li>
           <li><div class="lbl">Формы Mailchimp на новых страницах</div><span class="est">~2,25ч</span></li>
